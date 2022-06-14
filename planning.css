@@ -1,0 +1,130 @@
+@font-face 
+{
+    font-family: 'baloo';
+    src: url('baloo_regular_macroman/Baloo-Regular-webfont.woff') format('woff'),
+         url('baloo_regular_macroman/Baloo-Regular-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root
+{
+	--color1: rgb(247, 114, 129);
+	--color2: rgb(108, 91, 123);
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+
+	font-family: 'baloo';
+
+	box-sizing: border-box;
+}
+
+h1
+{
+	width: 100%;
+
+	margin-bottom: 30px;
+
+	color: var(--color1);
+	font-size: 50px;
+	text-align: center;
+}
+
+h1 span
+{
+	color: var(--color2);
+	font-size: 70px;
+}
+
+p 
+{
+	width: 100%;
+
+	margin-top: 30px;
+
+	font-size: 20px;
+	text-align: center;
+}
+
+p span 
+{
+	color: var(--color1);
+	font-size: 17px;
+}
+
+#planning
+{
+	width: 80%;
+
+	margin: auto;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#week, #activities, #more
+{
+	width: 100%;
+
+	display: flex;
+}
+
+#week div 
+{
+	width: 14%;
+	height: 50px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 30px;
+}
+
+#activities div 
+{
+	width: 14%;
+	height: 130px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+	color: white;
+	font-size: 18px;
+
+	border-top: 5px solid lightgray;
+}
+
+#more div 
+{
+	width: 14%;
+	height: 20px;
+}
+
+#week div, #activities div, #more div 
+{
+	border-right: 5px solid lightgray;
+}
+
+#week div:nth-child(7), #activities div:nth-child(7), #more div:nth-child(7)  
+{
+	border-right: none;
+}
+
+#activities div:nth-child(odd)
+{
+	background-color: var(--color1);
+} 
+
+#activities div:nth-child(even)
+{
+	background-color: var(--color2);
+} 
